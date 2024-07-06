@@ -1,0 +1,13 @@
+Animasi:
+Pause:
+Gerak dari kiri ke kanan
+
+Resume:
+Gerak dari kanan ke kiri
+
+Main Menu:
+Screen Transition (pake juga aja buat pas klik play) (Slice aja 1920x1080, udh gw pasin)
+In kalau mau ganti scene, Out pas awake scene
+
+Button:
+Ya biasa lah yang kepilih ganti ke yang ungu.

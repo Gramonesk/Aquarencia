@@ -1,0 +1,24 @@
+Hover matahari
+popup group text di kirinya
+- Tulisan Day x, Ex: Day 1 
+  x = integer
+- Total Progress Hari sebelumnya (Kalau gampang aja referencenya):
+  (Progress penyu + Progress upgrade + progress follow&like)/3
+
+End Day Summary:
+Pake background UI di drive end day summary, trus silang di atas kanan. abis silang screen transition ganti hari yay.
+Total Progress:
+  (Progress penyu + Progress upgrade + progress follow&like)/3
+  
+- Line pertama Progress penyu (Gausah satu penyu satu line lgsg semua aja (kalau mau juga gapapa tapi kamu ganteng)):
+  (((Sisik/10 * 100%))+
+  ((Hijau/25 * 100%))+
+  ((Tempayan/25 * 100%))+
+  ((Lekang/25 * 100%))+
+  ((Belimbing/25 * 100%))+
+  ((Pipih/10 * 100%)))/6
+- Line kedua progress unlock
+  karena ada 9 upgrade x/9 * 100%
+- Line ketiga followers & like.
+  Mechanic nambah followers sama like. Satu photo randomin tiap hari 500-1000 followers, 3000-5000 likes
+  ((x/10k * 100%) + (y/50k * 100%))/2

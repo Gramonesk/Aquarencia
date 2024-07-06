@@ -1,0 +1,4 @@
+Abis minigame tunjukkin aja berapa % Successnya buletin aja displaynya.
+Kalau udh main 22nya dpt funding:
+-Egg Hatching Success (>75%): 100 Coin
+-Feeding Success(>75%) | Jumlah <20 | <30 | <40: 50|100|150 Coin
