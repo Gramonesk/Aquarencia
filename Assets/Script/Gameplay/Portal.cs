@@ -1,9 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using System.Linq;
-using FileData;
+using Unity.VisualScripting;
+
 public class Portal : MonoBehaviour
 {
     public string SwitchToScene;
@@ -38,8 +36,6 @@ public class Portal : MonoBehaviour
         TeleportTo = destination.transform.position;    
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         player.transform.position = TeleportTo;
-        DataManager.Instance.SaveGame();
-
         Destroy(this.gameObject);
     }
 }

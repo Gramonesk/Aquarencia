@@ -46,16 +46,19 @@ public class Player : MonoBehaviour, ISaveFolder<PlayerData>
     //NTS : KALO GATAU DAN GADA WAKTU JGN MIKIRIN BAGUSNYA ASAL JALAN AJA DL
     public FolderInfo Folder;
     public string Filename;
+    public int Day;
     public FolderInfo folder { get => Folder; set => Folder = value; }
     public string filename { get => Filename; set => Filename = value; }
 
     public void Load(PlayerData data)
     {
         transform.position = data.position;
+        Day = data.Day;
     }
 
     public void Save(ref PlayerData data)
     {
+        data.Day = Day;
         data.position = transform.position;
     }
 }

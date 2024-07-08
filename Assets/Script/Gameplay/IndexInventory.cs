@@ -12,7 +12,6 @@ public class IndexInventory : Inventory, ISaveFolder<ImageIndex>
     public void Add(IAlbumData album)
     {
         int value = Main.imgDatas.IndexOf(album.Details);
-        Debug.Log(value + "idk why -1" + album.Details);
         indexes.Add(value);
         Refresh();
     }
@@ -31,7 +30,6 @@ public class IndexInventory : Inventory, ISaveFolder<ImageIndex>
     }
     public void Refresh()
     {
-        Debug.Log(Main);
         var MainImgs = Main.images;
         var MainDetail = Main.imgDatas;
         images.Clear(); imgDatas.Clear();

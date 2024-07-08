@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -13,6 +14,7 @@ namespace FileData
         public static DataManager Instance;
         private DataHandler handler;
         public int MaxSize;
+        public bool isSaving;
 
         //List Folder yg mau dipake
         private readonly Dictionary<(string,string), ImageData> ImageFolders = new();
@@ -51,13 +53,23 @@ namespace FileData
             Load(AllIndexObjects, IndexFolders, AddFolder<ImageIndex, ISaveFolder<ImageIndex>>);
             Load(upgradedataObjects, UpgradeFolders, AddFolder<Upgrades, ISaveFolder<Upgrades>>);
         }
-        public void SaveGame()
+        private IEnumerator Save()
         {
             //Access all object, reference the folder, What function to use to save the items
             GetDatas(DataImageObjects, ImageFolders, handler.SaveImage);
             GetDatas(_playerObject, PlayerFolders, handler.SaveText);
             GetDatas(AllIndexObjects, IndexFolders, handler.SaveText);
             GetDatas(upgradedataObjects, UpgradeFolders, handler.SaveText);
+            yield return null;
+        }
+        public void SaveGame(Action Do)
+        {
+            StartCoroutine(Saving(Do));
+        }
+        private IEnumerator Saving(Action Do)
+        {
+            yield return Save();
+            Do?.Invoke();
         }
         /// <summary>
         /// Get a non-existing data name
@@ -90,11 +102,13 @@ namespace FileData
         }
         private void OnApplicationQuit()
         {
-            SaveGame();
+            SaveGame(null);
         }
         public List<T> FindInterfaceObjects<T>()
         {
             IEnumerable<T> objects = FindObjectsOfType<MonoBehaviour>(true).OfType<T>();
+            Debug.Log("Save for" + typeof(T) + "===========================");
+            foreach (T obj in objects) { Debug.Log(obj); }
             return new List<T>(objects);
         }
         public void Load<T, T1>(List<T1> Objects, Dictionary<(string, string), T> Folders, Func<(string, string) ,Dictionary<(string, string), T>, T> Add ) where T1 : ISaveFolder<T> where T : new()

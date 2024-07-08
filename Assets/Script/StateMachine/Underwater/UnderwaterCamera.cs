@@ -108,11 +108,11 @@ public class Und_ScreenshotPhase : BaseState
     public Und_ScreenshotPhase() { }
     public override void OnExit()
     {
-        UIManager2.instance.AllowSettings(true);
+        UIManager.instance.AllowSettings(true);
     }
     public override void OnStart()
     {
-        UIManager2.instance.AllowSettings(false);
+        UIManager.instance.AllowSettings(false);
         ScreenshotHandler.Instance.TakeSS();
     }
     public override void OnUpdate()

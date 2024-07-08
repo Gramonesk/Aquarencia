@@ -11,7 +11,7 @@ public class Summary : MonoBehaviour
     public float money_gained;
     void Start()
     {
-        Invoke("Wait", time);
+        Invoke(nameof(Wait), time);
     }
     void Wait()
     {

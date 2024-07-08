@@ -37,9 +37,10 @@ public class ScoreSort : MonoBehaviour
         Percentage.text = ((int)(Score / round * 100)).ToString();
         if (a > 75)
         {
-            if (Score > 40) summary.money_gained = 150;
-            else if (Score > 30) summary.money_gained = 100;
-            else if (Score > 20) summary.money_gained = 50;
+            if (Score > 20) summary.money_gained = 150;
+            else if (Score > 15) summary.money_gained = 100;
+            else if (Score > 10) summary.money_gained = 50;
+            Debug.Log("UPDATING, " + summary.money_gained);
         }
         else
         {

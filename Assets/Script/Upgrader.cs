@@ -51,9 +51,13 @@ public class Upgrader : MonoBehaviour, ISaveFolder<Upgrades>
     public FolderInfo Folder;
     public string Filename;
 
-    private int unlocked = 0;
+    public int unlocked = 0;
     public FolderInfo folder { get => Folder; set => Folder = value; }
     public string filename { get => Filename; set => Filename = value; }
+    private void Update()
+    {
+        Debug.Log(name + " INI SLOTKU DAN INI NILAIKU " + unlocked);
+    }
     public void Refresh()
     {
         for (int i = 0; i < unlocked; i++) images[i].sprite = UnlockedSprite;
@@ -71,6 +75,7 @@ public class Upgrader : MonoBehaviour, ISaveFolder<Upgrades>
         {
             CurrencyManager.instance.DeductValue(Cost[unlocked]);
             unlocked++;
+            Debug.Log(unlocked);
             Refresh();
         }
     }

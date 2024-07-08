@@ -26,10 +26,12 @@ public class SceneChanger : MonoBehaviour
     public void ChangeScene(string name, Action DoAfterLoad)
     {
         SETFALSE();
-        DataManager.Instance.SaveGame();
-        loadscreen_UI = Instantiate(loadingPrefab, this.transform);
-        transition = loadscreen_UI.GetComponentInChildren<SceneTransition>();
-        StartCoroutine(Load(name, DoAfterLoad));
+        DataManager.Instance.SaveGame(() =>
+        {
+            loadscreen_UI = Instantiate(loadingPrefab, this.transform);
+            transition = loadscreen_UI.GetComponentInChildren<SceneTransition>();
+            StartCoroutine(Load(name, DoAfterLoad));
+        });
     }
     IEnumerator Load(string sceneName, Action DoAfterLoad)
     {

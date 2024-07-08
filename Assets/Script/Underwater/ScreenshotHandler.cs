@@ -58,7 +58,7 @@ public class ScreenshotHandler : MonoBehaviour, ISaveFolder<ImageIndex>
         SaveToData(newImg);
         //Tambah jumlah jepretan
         Stats.instance.AddScore(Stats.instance.Texts.Count - 1);
-        DataManager.Instance.SaveGame();
+        DataManager.Instance.SaveGame(null);
         if (GameCounter.Instance.Counter()) Resume();
     }
     public void Resume()

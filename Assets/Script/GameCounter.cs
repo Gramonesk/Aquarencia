@@ -35,7 +35,7 @@ public class GameCounter : MonoBehaviour, ISaveFolder<Upgrades>
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             Time.timeScale = 0f;
-            UIManager2.instance.AllowSettings(false);
+            UIManager.instance.AllowSettings(false);
             CounterOut_Menu.SetActive(true);
             AudioManager.Instance.Play("GameFinish");
             return false;

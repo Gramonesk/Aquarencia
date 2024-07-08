@@ -12,7 +12,6 @@ public class ObjectAlbums : Upgradeable
     //ganti kalo semisal pake inv type lain
     private IndexInventory data;
     public UIClass Open;
-
     private void Awake()
     {
         data = GetComponent<IndexInventory>();

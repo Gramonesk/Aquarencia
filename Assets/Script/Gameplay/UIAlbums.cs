@@ -30,7 +30,7 @@ public class UIAlbums : MonoBehaviour
             }
         }
     }
-    public void Start()
+    public void OnEnable()
     {
         offset = 0;
         Refresh();

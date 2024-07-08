@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,11 +8,6 @@ public interface ICommand
 {
     void Execute();
     void Undo();
-}
-public interface IPausable
-{
-    void OnPause();
-    void OnResume();
 }
 public class UIManagerInvoker
 {
@@ -37,30 +33,50 @@ public class UIManagerInvoker
         }
     }
 }
+public abstract class Pausable : MonoBehaviour
+{
+    private Action Do;
+    public virtual void Awake()
+    {
+        Do = RealUpdate;
+    }
+    public void Update()
+    {
+        Do?.Invoke();
+    }
+    public abstract void RealUpdate();
+    public void Pause() { Do = null; }
+    public void Resume() { Do = RealUpdate; }
+}
+public class PauseController : Singleton<PauseController>
+{
+    List<Pausable> pausables;
+    public override void Awake()
+    {
+        base.Awake();
+        pausables = FindObjectsOfType<MonoBehaviour>(true).OfType<Pausable>().ToList();
+    }
+    public void Toggle(bool Pause)
+    {
+        Time.timeScale = Pause ? 0 : 1;
+        if (Pause)foreach (var pausable in pausables) pausable.Pause();
+        else foreach (var pausable in pausables) pausable.Resume();
+    }
+}
 public class UIManager : MonoBehaviour, ICommand
 {
-    public SceneTransition pauseMenu;
-    public List<GameObject> Unlisted_UIS;
-
-    private List<IPausable> pauses;
+    [Header("Animation Related Datas")]
+    public SceneTransition pauseAnim;
     public static UIManager instance;
-    private List<GameObject> Objects = new();
+
     private bool IsOn;
     [HideInInspector] public bool IsNotActive;
     Coroutine korotin;
-    private void Awake()
+    public void Awake()
     {
-        pauses = FindObjectsOfType<MonoBehaviour>(true).OfType<IPausable>().ToList();
-        if (instance != null) Destroy(instance.gameObject);
         instance = this;
-        for(int i = 0; i < transform.childCount; i++)
-        {
-            Objects.Add(transform.GetChild(i).gameObject);
-        }
-        foreach (var a in Unlisted_UIS) Objects.Remove(a);
         UIManagerInvoker.undoStack.Clear();
         UIManagerInvoker.undoStack.Push(this);
-        //Objects = GetComponentsInChildren<GameObject>().ToList();
     }
     public void Update()
     {
@@ -81,58 +97,40 @@ public class UIManager : MonoBehaviour, ICommand
     {
         SceneChanger.Instance.ChangeScene(name);
     }
+    public void Fullscreen()
+    {
+        Screen.fullScreen = !Screen.fullScreen;
+    }
     public void Quit()
     {
         Application.Quit();
     }
-    public void Toggle()
+    public void TogglePauseMenu()
     {
-        if(korotin != null)StopCoroutine(korotin);
+        if (korotin != null) StopCoroutine(korotin);
         korotin = StartCoroutine(ToggleMenu());
-    }
-    public void ToggleFullScreen()
-    {
-        Screen.fullScreen = !Screen.fullScreen;
     }
     public IEnumerator ToggleMenu()
     {
         IsOn = !IsOn;
         if (IsOn)
         {
-            yield return pauseMenu.AnimateTransitionIn();
-            Time.timeScale = 0;
-            //PauseGame(true);
+            PauseController.Instance.Toggle(true);
+            yield return pauseAnim.AnimateTransitionIn();
         }
         else
         {
-            Time.timeScale = 1;
-            //PauseGame(false);
-            yield return pauseMenu.AnimateTransitionOut();
-            foreach (GameObject obj in Objects) obj.SetActive(false);
+            PauseController.Instance.Toggle(false);
+            yield return pauseAnim.AnimateTransitionOut();
         }
     }
 
     public void Execute()
     {
-        Toggle();
+        TogglePauseMenu();
     }
     public void Undo()
     {
-        Toggle();
-    }
-    public void PauseGame(bool con)
-    {
-        if (con)
-        {
-            foreach (IPausable pause in pauses) pause.OnPause();
-            Time.timeScale = 0;
-            return;
-        }
-        else
-        {
-            foreach (IPausable pause in pauses) pause.OnResume();
-            Time.timeScale = 1;
-            return;
-        }
+        TogglePauseMenu();
     }
 }

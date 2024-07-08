@@ -55,6 +55,7 @@ public class TurtleSpawner : MonoBehaviour
     }
     public void Update()
     {
+        if (ScoreSort.instance.timeleft <= 0) return;
         elapsed += Time.deltaTime;
         interval = Mathf.Lerp(SlowestInterval, FastestInterval, 1 - Mathf.Clamp01((ScoreSort.instance.time - Time.time) / maxInterpolationtime));
         if (interval < elapsed)

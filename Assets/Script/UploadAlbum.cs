@@ -1,6 +1,3 @@
-using FileData;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
@@ -12,6 +9,7 @@ public class UploadAlbum : MonoBehaviour, IDropHandler
 
     public Image sprite;
     public UnityEvent OnDropImg;
+    public Portal portal;
     public Draggable data;
     public void OnDrop(PointerEventData eventData)
     {
@@ -33,13 +31,15 @@ public class UploadAlbum : MonoBehaviour, IDropHandler
     }
     public void OnConfirmation()
     {
+        Player player = FindObjectOfType<Player>();
+        var toClear = player.gameObject.GetComponentInChildren<IndexInventory>();
+        foreach (var index in toClear.indexes) Inventory.Main.imgDatas[index].isSold = true;
+        toClear.indexes.Clear();
+        player.Day++;
         data.Details.isSold = false;
         album.Insert(data, 0);
         album.Refresh();
-        SceneChanger.Instance.ChangeScene("connector", OnLoad);
+        portal.OnInteract();
     }
-    public void OnLoad()
-    {
-        
-    }
+
 }
