@@ -3,7 +3,7 @@
 ![0708](https://github.com/Gramonesk/Aquarencia/assets/154248035/a1bfb4f8-25b0-4f2d-b076-3702cf897b18)
 
 <h3>About Game</h3>
-Neon Pong is just a classic pong game that i created using unity. This game is very simplistic, user friendly, and is neon themed.
+    <u><b>Aquarencia</b></u> is an <i>Adventure and Role-Playing Game (RPG)</i> where players take on the role of the main character, <u><b>Made</b></u>. Made explores an underwater world and interacts with turtles using a camera and his submarine. Interestingly, Made also serves as an influencer and shopkeeper, managing social media accounts and the shop itself. The game combines exploration, photography, and social simulation elements.
 
 <h3>Gameplay</h3>
 The gameplay of Neon Pong is just like the classic game of Pong, but you can also SMASH! You can play offline with a friend or you can try playing against bots with difficulty ranging from easy to hard.
