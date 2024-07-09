@@ -5,8 +5,8 @@
 <h3>About Game</h3>
     <u><b>Aquarencia</b></u> is an <i>Adventure and Role-Playing Game (RPG)</i> where players take on the role of the main character, <u><b>Made</b></u>. Made explores an underwater world and interacts with turtles using a camera and his submarine. Interestingly, Made also serves as an influencer and shopkeeper, managing social media accounts and the shop itself. The game combines exploration, photography, and social simulation elements.
 
-<h3>Gameplay</h3>
-The gameplay of Neon Pong is just like the classic game of Pong, but you can also SMASH! You can play offline with a friend or you can try playing against bots with difficulty ranging from easy to hard.
+<h3>High Concept Statement</h3>
+A wildlife photographer, drawn by childhood memories of the underwater world, receives a plea for help from a close friend who has secured a turtle conservation license. Eager to contribute, the photographer leverages their influencer status to boost both awareness and funding for their friend’s cause. Players step into the photographer’s shoes, embarking on an adventure that unfolds through their lens.
 
 <h3>Controls</h3>
 Main Input:
