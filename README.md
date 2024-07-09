@@ -19,8 +19,18 @@ Top Down Interactions:
 - A (Left)
 - Space (interact)
 
+Menu Interaction:
+- LMB (interact)
+- ESC (cancel / exit)
 
-<h3>Setup</h3>
+Egg Hatching gameplay:
+- LMB (Drag and drop)
 
-- If you want to play the game, make sure to download the "NeonPong-Built.zip" file
-- Extract the folder, then run the .exe file
+Turtle Feeding gameplay:
+- WASD (Keyboard input for food)
+
+Submarine gameplay:
+- Space (Toggle View)
+- Mouse Drag (Move camera view)
+- Mouse Scroll (Zoom View)
+- LMB (Take Photo)
