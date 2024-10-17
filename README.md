@@ -9,8 +9,8 @@
 * Organizing the shop and also the social media
 
   
-| **Role** | **Team Size** | **Development Time** | **Engine** |
-|:---:|:---:|:---:|:---:|
+|**Name**| **Role** | **Team Size** | **Development Time** | **Engine** |
+||:---:|:---:|:---:|:---:|
 | Game Programmer | 3 | 3 Weeks | Unity 2022.3.5f1 |
 
 My role : Game Programmer (includes post processing, movement, menu)
@@ -44,40 +44,15 @@ I learned a lot about profiling, optimizing and handling memory when it comes to
 
 ## Controls
 Main Input:
-|**KeyCode**|**Function**|
-|:---:|:---:|
-| Escape | (Open pause menu / Exit UI)|
-
-Top Down Movement:
-|**KeyCode**|**Function**|
-|:---:|:---:|
-| W | Up (Movement)|
-| A | Left (Movement)|
-| S | Down (Movement)|
-| D | Right (Movement)|
-| Space | Interact |
-
-UI Interaction:
-|**KeyCode**|**Function**|
-|:---:|:---:|
-| LMB | Interact |
-| Escape | Cancel / Exit |
-
-Egg Hatching gameplay:
-|**KeyCode**|**Function**|
-|:---:|:---:|
-| LMB | drag egg / turtle|
-| release LMB| drop egg / turtle|
-
-Turtle Feeding gameplay:
-|**KeyCode**|**Function**|
-|:---:|:---:|
-|WASD| Input to feed food |
-
-Submarine gameplay:
-|**KeyCode**|**Function**|
-|:---:|:---:|
-|Space| Toggle View |
-|Mouse input|Move camera view|
-|Scrollwheel | Zoom View|
-|LMB| Take Photo|
+<table width ="100%">
+  <td> 
+    
+![Aquarencia Controls1](https://github.com/user-attachments/assets/63c78467-7f67-418b-8088-4257111cdd26)
+    
+  </td>
+  <td> 
+    
+![Aquarencia Controls2](https://github.com/user-attachments/assets/1b68eae3-e6bd-4bf7-8e65-4522fbfdcc99)
+    
+  </td>
+</table>
