@@ -38,6 +38,7 @@ A wildlife photographer, drawn by childhood memories of the underwater world, re
 
 <details open>
   <summary>More Details</summary>
+  <br>
   
 1. **Data Persistence**
    - using JSON, filestream and furthermore using generics and interfaces to make it modular and appliable for all my other projects, this mechanics allows me to save data ex: string datas, pictures and more
@@ -54,8 +55,17 @@ A wildlife photographer, drawn by childhood memories of the underwater world, re
 7. **Object pooling**
    - using an object pooling to reduce memory buffer and also a large performance boost on the game
 </details>
-<br>
 
+
+<details open>
+  <summary>What i learned</summary>
+  <br>
+I learned a lot about profiling, optimizing and handling memory when it comes to making this project which was a personal interest for me. Throughout the process of making this project, i spend a lot of effort and gained experience in understanding on how to make my code a lot more flexible and enabled me to modify, extend it easily with new features needed.
+</br></br>
+ However, i also learned to adopt a more practical approach on making code that is necessary and refactor it later when needed to increase my efficiency on my making process
+</details>
+
+<br>
 ## 📂Files description
 
 ```
@@ -69,12 +79,6 @@ A wildlife photographer, drawn by childhood memories of the underwater world, re
    ├── ...
       
 ```
-<br>
-
-## 📜 What I learned
-I learned a lot about profiling, optimizing and handling memory when it comes to making this project which was a personal interest for me. Throughout the process of making this project, i spend a lot of effort and gained experience in understanding on how to make my code a lot more flexible and enabled me to modify, extend it easily with new features needed.
-</br></br>
- However, i also learned to adopt a more practical approach on making code that is necessary and refactor it later when needed to increase my efficiency on my making process
 <br>
 
 ## 🕹️ Controls
