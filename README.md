@@ -2,7 +2,7 @@
 
 ![0708](https://github.com/Gramonesk/Aquarencia/assets/154248035/a1bfb4f8-25b0-4f2d-b076-3702cf897b18)
 
-## 🔴 About This Project
+## 🔴 About Project
   This project was developed as a serious game to face harming behaviour towards the environment specifically for sea turtles, hence the purpose : *To increase awareness on people regarding harm towards sea turtles.* </br></br> The game itself uses some unique mechanics that was customly made in which are 
 * Capturing and Saving photos
 * Selling the photos
