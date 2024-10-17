@@ -7,7 +7,7 @@
 * Capturing and Saving photos
 * Selling the photos
 * Organizing the shop and also the social media
-
+<br>
 
 ## 📋 Project Info 
 * Editor Version : Unity 2022.3.5f1
@@ -19,22 +19,27 @@
 | Dave Edmund Daniel| Game Artist | 7 Days |
 
 * My Contribution : Game Programmer (includes post processing, movement, menu)
+<br>
 
 ## 🕹️ About Game
 <u><b>Aquarencia</b></u> is an <i>Adventure and Role-Playing Game (RPG)</i> where players take on the role of the main character, <u><b>Made</b></u>. Made explores an underwater world and interacts with turtles using a camera and his submarine. Interestingly, Made also serves as an influencer and shopkeeper, managing social media accounts and the shop itself. The game combines exploration, photography, and social simulation elements.
+<br>
 
 ## 🕹️ High Concept Statement
 A wildlife photographer, drawn by childhood memories of the underwater world, receives a plea for help from a close friend who has secured a turtle conservation license. Eager to contribute, the photographer leverages their influencer status to boost both awareness and funding for their friend’s cause. Players step into the photographer’s shoes, embarking on an adventure that unfolds through their lens.
+<br>
 
 ## 📜 Scripts and Features
 
-|  Script       | Description                                                  |
-| ------------------- | ------------------------------------------------------------ |
-| `GameManager.cs` | Manages the game flow such as timers, difficulty levels, networking, etc. |
-| `CheckPointManager.cs` | Handles the location and management of checkpoints in the game. |
-| `SaturationChanger.cs`  | Controls the saturation levels of the 3D environment via post-processing. |
-| `UIHandler.cs`  | Manages various UI elements and organizes them into sequences. |
-| `etc`  | |
+| Location |  Script       | Description                                                  |
+|-----| ------- | ------------------------------------------------------------ |
+|DataPersistence| `DataManager.cs` | Manages data storage and data distribution towards the interfaces. |
+|DataPersistence| `DataHandler.cs` | Handles the save and loading system for the game. |
+|Gameplay| `Inventory.cs` | Stores picture data and its detail for further uses during gameplay. |
+|Manager| `UIManager.cs`  | Manages pausing and various UI element functions|
+|Underwater| `UIHandler.cs`  | Manages various UI elements and organizes them into sequences. |
+| | `etc`  | |
+<br>
 
 <details>
   <summary>More Details</summary>
@@ -53,6 +58,8 @@ A wildlife photographer, drawn by childhood memories of the underwater world, re
     -  Lights 2D used for improved visual
 7. **Object pooling**
    - using an object pooling to reduce memory buffer and also a large performance boost on the game
+8. **State Machine Pattern**
+   - using statemachine to control states pattern and reduce potential bug threats on the game.
 </details>
 
 
@@ -65,15 +72,16 @@ I learned a lot about profiling, optimizing and handling memory when it comes to
 </details>
 
 <br>
+
 ## 📂Files description
 
 ```
-├── Aquarencia                       # In this Folder, containing all the Unity project files, to be opened by a Unity Editor
+├── Aquarencia                       # Folder containing all the Unity project files, to be opened by a Unity Editor
    ├── ...
-   ├── Assets                        #  In this Folder, it contains all our code, assets, scenes, etcwas not automatically created by Unity
+   ├── Assets                        # Folder containing all code, assets, scenes, etc used for development. This was not automatically created by Unity
       ├── ...
-      ├── Scripts                    # In this folder, there are several packages that you must add via Unity Package Manager
-      ├── Scenes                     # In this folder, there are scenes. You can open these scenes to play the game via Unity
+      ├── Scenes                     # Folder containing several scenes that you can open and play the game via Unity
+      ├── Script                     # Folder containing all the scripts related to making the game
       ├── ....
    ├── ...
       
