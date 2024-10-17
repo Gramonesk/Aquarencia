@@ -2,6 +2,19 @@
 
 ![0708](https://github.com/Gramonesk/Aquarencia/assets/154248035/a1bfb4f8-25b0-4f2d-b076-3702cf897b18)
 
+<h3> About This Project </h3>
+<p align="justify"> This project was developed as a serious game to face harming behaviour towards the environment specifically for sea turtles, hence the purpose : to increase awareness on people regarding harm towards sea turtles. The game itself uses some unique mechanics that was customly made in which are 
+- Capturing and Saving photos
+- Selling the photos
+- Organizing the shop and also the social media
+</p>
+
+| **Role** | **Team Size** | **Development Time** | **Engine** |
+|----------|---------------|---------------------|------------|
+| Game Programmer | 3 | 3 Weeks | Unity 2022.3.5f1 |
+
+My role : Game Programmer (includes post processing, movement, menu)
+
 <h3>About Game</h3>
     <u><b>Aquarencia</b></u> is an <i>Adventure and Role-Playing Game (RPG)</i> where players take on the role of the main character, <u><b>Made</b></u>. Made explores an underwater world and interacts with turtles using a camera and his submarine. Interestingly, Made also serves as an influencer and shopkeeper, managing social media accounts and the shop itself. The game combines exploration, photography, and social simulation elements.
 
