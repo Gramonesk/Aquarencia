@@ -12,11 +12,11 @@
 ## 📋 Project Info 
 * Editor Version : Unity 2022.3.5f1
   
-|**Name**| **Role** |
-|:---:|:---:|
-| Philips Sanjaya | Game Programmer | 
-| Justin Tjokro | Game Designer |
-| Dave Edmund Daniel| Game Artist | 
+|**Name**| **Role** | **Development Time** |
+|:---:|:---:|:---:|
+| Philips Sanjaya | Game Programmer | 7 Days |
+| Justin Tjokro | Game Designer | 7 Days | 
+| Dave Edmund Daniel| Game Artist | 7 Days |
 
 * My Contribution : Game Programmer (includes post processing, movement, menu)
 
