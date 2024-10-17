@@ -9,9 +9,11 @@
 * Organizing the shop and also the social media
 
   
-|**Name**| **Role** | **Team Size** | **Development Time** | **Engine** |
-||:---:|:---:|:---:|:---:|
-| Game Programmer | 3 | 3 Weeks | Unity 2022.3.5f1 |
+|**Name**| **Role** | **Development Time** | **Engine** |
+|:---:|:---:|:---:|:---:|
+| Philips Sanjaya | Game Programmer | 3 Weeks | Unity 2022.3.5f1 |
+| Justin Tjokro | Game Designer | 3 Weeks | Unity 2022.3.5f1 |
+| Dave Edmund Daniel| Game Artist | 3 Weeks | Unity 2022.3.5f1 |
 
 My role : Game Programmer (includes post processing, movement, menu)
 
@@ -37,13 +39,12 @@ A wildlife photographer, drawn by childhood memories of the underwater world, re
 1. **Object pooling**
    - using an object pooling to reduce memory buffer and also a large performance boost on the game
   
-## What i learned
+## What I learned
 I learned a lot about profiling, optimizing and handling memory when it comes to making this project which was a personal interest for me. Throughout the process of making this project, i spend a lot of effort and gained experience in understanding on how to make my code a lot more flexible and enabled me to modify, extend it easily with new features needed.
 </br></br>
  However, i also learned to adopt a more practical approach on making code that is necessary and refactor it later when needed to increase my efficiency on my making process
 
 ## Controls
-Main Input:
 <table width ="100%">
   <td> 
     
@@ -52,7 +53,7 @@ Main Input:
   </td>
   <td> 
     
-![Aquarencia Controls2](https://github.com/user-attachments/assets/1b68eae3-e6bd-4bf7-8e65-4522fbfdcc99)
+![Aquarencia Controls2](https://github.com/user-attachments/assets/e24c1d35-0a8d-4f6e-84d4-890c7d6552f7)
     
   </td>
 </table>
