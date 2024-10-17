@@ -36,10 +36,8 @@ A wildlife photographer, drawn by childhood memories of the underwater world, re
 | `UIHandler.cs`  | Manages various UI elements and organizes them into sequences. |
 | `etc`  | |
 
-<details open>
-  <summary>More Details</summary>
-  <br>
-  
+<details>
+  <summary>**More Details**</summary>
 1. **Data Persistence**
    - using JSON, filestream and furthermore using generics and interfaces to make it modular and appliable for all my other projects, this mechanics allows me to save data ex: string datas, pictures and more
    - using inventory system that retrieves data i saved either by singleton referencing or straight from loading the game so that the photo data can be used to sell and display what was taken before 
@@ -57,8 +55,8 @@ A wildlife photographer, drawn by childhood memories of the underwater world, re
 </details>
 
 
-<details open>
-  <summary>What i learned</summary>
+<details>
+  <summary>**What i learned**</summary>
   <br>
 I learned a lot about profiling, optimizing and handling memory when it comes to making this project which was a personal interest for me. Throughout the process of making this project, i spend a lot of effort and gained experience in understanding on how to make my code a lot more flexible and enabled me to modify, extend it easily with new features needed.
 </br></br>
