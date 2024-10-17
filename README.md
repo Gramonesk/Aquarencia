@@ -36,8 +36,8 @@ A wildlife photographer, drawn by childhood memories of the underwater world, re
 |DataPersistence| `DataManager.cs` | Manages data storage and data distribution towards the interfaces. |
 |DataPersistence| `DataHandler.cs` | Handles the save and loading system for the game. |
 |Gameplay| `Inventory.cs` | Stores picture data and its detail for further uses during gameplay. |
-|Manager| `UIManager.cs`  | Manages pausing and various UI element functions|
-|Underwater| `UIHandler.cs`  | Manages various UI elements and organizes them into sequences. |
+|Manager| `UIManager.cs`  | Manages pausing and various UI element functions. |
+|Underwater| `ScreenshotHandler.cs`  | Handles screenshot and also album creating. |
 | | `etc`  | |
 <br>
 
