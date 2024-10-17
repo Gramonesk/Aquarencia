@@ -3,7 +3,7 @@
 ![0708](https://github.com/Gramonesk/Aquarencia/assets/154248035/a1bfb4f8-25b0-4f2d-b076-3702cf897b18)
 
 ## About This Project
-  This project was developed as a serious game to face harming behaviour towards the environment specifically for sea turtles, hence the purpose : to increase awareness on people regarding harm towards sea turtles. The game itself uses some unique mechanics that was customly made in which are 
+  This project was developed as a serious game to face harming behaviour towards the environment specifically for sea turtles, hence the purpose : *To increase awareness on people regarding harm towards sea turtles.* </br></br> The game itself uses some unique mechanics that was customly made in which are 
 * Capturing and Saving photos
 * Selling the photos
 * Organizing the shop and also the social media
@@ -22,23 +22,23 @@ My role : Game Programmer (includes post processing, movement, menu)
 A wildlife photographer, drawn by childhood memories of the underwater world, receives a plea for help from a close friend who has secured a turtle conservation license. Eager to contribute, the photographer leverages their influencer status to boost both awareness and funding for their friend’s cause. Players step into the photographer’s shoes, embarking on an adventure that unfolds through their lens.
 
 ## Mechanics I utilize
-1. Data Persistence
+1. **Data Persistence**
    - using JSON, filestream and furthermore using generics and interfaces to make it modular and appliable for all my other projects, this mechanics allows me to save data ex: string datas, pictures and more
    - using inventory system that retrieves data i saved either by singleton referencing or straight from loading the game so that the photo data can be used to sell and display what was taken before 
-1. Screen snapping and game resolution
+1. **Screen snapping and game resolution**
    - used for taking photos of the sea turtles and saving it, this also scales with the game resolution so that it wont break the game
-1. Design Patterns
+1. **Design Patterns**
    - using an Invoker so gameplay feels robust especially when interacting with the pause menu or UI
-1. Navigation mesh
+1. **Navigation mesh**
    - using a navmesh to make the npc move and interact with the environment to make the gameplay feel more filled.
-1. URP POST-PROCESSING
+1. **URP POST-PROCESSING**
     -  Implimentation of post-processing effects in unity
     -  Lights 2D used for improved visual
-1. Object pooling
+1. **Object pooling**
    - using an object pooling to reduce memory buffer and also a large performance boost on the game
   
 ## What i learned
-
+I learned a lot about profiling, optimizing and handling memory when it comes to making this project which was a personal interest for me. Throughout the process of making this project, i spend a lot of effort and gained experience in understanding on how to make my code a lot more flexible and enabled me to modify, extend it easily with new features needed. However, i also learned to adopt a more practical approach on making code that is necessary and refactor it later when needed to increase my efficiency on my making process
 
 ## Controls
 Main Input:
