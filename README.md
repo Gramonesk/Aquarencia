@@ -7,15 +7,24 @@
 * Capturing and Saving photos
 * Selling the photos
 * Organizing the shop and also the social media
-
   
-|**Name**| **Role** | **Development Time** | **Engine** |
-|:---:|:---:|:---:|:---:|
-| Philips Sanjaya | Game Programmer | 3 Weeks | Unity 2022.3.5f1 |
-| Justin Tjokro | Game Designer | 3 Weeks | Unity 2022.3.5f1 |
-| Dave Edmund Daniel| Game Artist | 3 Weeks | Unity 2022.3.5f1 |
+|**Name**| **Role** |
+|:---:|:---:|
+| Philips Sanjaya | Game Programmer | 
+| Justin Tjokro | Game Designer |
+| Dave Edmund Daniel| Game Artist | 
 
-My role : Game Programmer (includes post processing, movement, menu)
+<details open>
+  <summary> 
+    More Details
+  </summary>
+
+  1. My role : Game Programmer (includes post processing, movement, menu)
+     * Active Development Time : 10 Days
+     * Editor Version : Unity 2022.3.5f1
+</details>
+
+
 
 ## About Game
 <u><b>Aquarencia</b></u> is an <i>Adventure and Role-Playing Game (RPG)</i> where players take on the role of the main character, <u><b>Made</b></u>. Made explores an underwater world and interacts with turtles using a camera and his submarine. Interestingly, Made also serves as an influencer and shopkeeper, managing social media accounts and the shop itself. The game combines exploration, photography, and social simulation elements.
